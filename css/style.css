@@ -776,8 +776,8 @@ input[type=text] {
 
 .VerticalBottom { position:absolute; bottom:2em; left:4em; right:4em; }
 
-.LocalITExperts { background-image: url("../images/About_Us_Local_IT_Experts.png"); }
-.WhiteGloveServices { background-image: url("../images/About_Us_White_Glove_Services.png"); }
+.LocalITExperts { background-image: url("../images/aboutus/About_Us_Local_IT_Experts.png"); }
+.WhiteGloveServices { background-image: url("../images/aboutus/About_Us_White_Glove_Services.png"); }
 
 @media only screen and (max-width:768px) {
 	.LocalITExperts, .WhiteGloveServices
