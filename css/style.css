@@ -798,6 +798,7 @@ input[type=text] {
 #IT_Gurus_Carousel .caption { background-color:transparent !important; text-align:center; padding:10px; }
 #IT_Gurus_Carousel .thumbnail img { display:inline-block !important; }
 #IT_Gurus_Carousel .thumbnail { background-color:transparent !important; text-align:center; }
+#IT_Gurus_Carousel .carousel-inner>.item { left: 0% !important; }
 
 #OurMajorPartners .MajorPartner img { max-width:100% !important; display:block; margin:0 auto !important; filter:grayscale(100%); -webkit-filter:grayscale(100%); transition:all 0.5s; cursor:pointer; }
 #OurMajorPartners .MajorPartner:hover img { filter:grayscale(0%); -webkit-filter:grayscale(0%); }
@@ -1057,7 +1058,7 @@ input[type=text] {
 		padding:1em;	
 	}
 	
-	.carousel-inner>.item {
+	#VirtualizationExperts .carousel-inner>.item {
 		left:0 !important;
 	}
 	
@@ -1081,7 +1082,7 @@ input[type=text] {
 		padding:50px 15px;
 	}
 	
-	.carousel-inner>.item {
+	#VirtualizationExperts .carousel-inner>.item {
 		left:1% !important;
 	}
 	.form-inline {
