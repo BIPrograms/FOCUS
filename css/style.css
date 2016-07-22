@@ -920,6 +920,8 @@ input[type=text] {
 	background-color:#000000;
 }
 
+#ThoughtLeadership .caption { padding:20px !important; }
+
 .thumbnail img:hover {
 }
 
