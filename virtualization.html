@@ -1,0 +1,890 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800)" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<script>
+$(document).ready(function(){
+
+
+
+	$(".dropbtn").click(function(event){
+		$(this).parent().find(".dropdown-content").toggleClass("show");
+	});
+	
+	
+
+
+window.onclick = function(event)
+{
+	$(".dropdown").each( function()
+	{
+		if( !$.contains(this, event.target) )
+		{
+			$(this).find(".dropdown-content").removeClass("show");
+		}
+	});
+};
+
+
+</script>
+
+</head>
+<body>
+<script type='text/javascript' async='async' src='http://www.inxero.com/assets/inxo_xapp_loader.js'></script>
+	<header>
+	
+		<div class="container-fluid">
+		<div class="row" data-owner="3">
+			<div class="container-fluid" style="z-index: 99; position: relative;">
+				<nav class="navbar navbar-default">
+					<div class="row navbar_row1">
+						<div class="col-xs-12" style="padding:0px; z-index: 88;">
+							<div class="container">
+								<div class="row">
+									<div class="col-xs-6 col-sm-3 LogoRow">
+										<a href="homepage.html" style="padding:0px !important;"><img src="images/IntelligenceLogo.png" style="max-width:200px !important;" /></a>
+									</div>
+									<div class="col-xs-9 hidden-xs LogoRow text-right">
+										<a href="#">ABOUT</a>
+										<a href="#">LOGIN</a>
+										&emsp;
+										<a href="#" class="JoinIntelligence">JOIN INTELLIGENCE&nbsp;<i class="LongArrowRight Blue" aria-hidden="true"></i></a>
+									</div>
+									<div class="col-xs-6 LogoRow text-right visible-xs-block"><a href="#" class="JoinIntelligence">JOIN NOW</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row navbar_row2">
+						<div class="col-xs-12" style="padding:0px; z-index: 88;">
+							<div class="container">
+								<div class="row" style="position:relative;">
+									<div class="navbar-header">
+										<ul class="nav navbar-nav visible-xs-block">
+											<li class="nohover">
+												<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" style="float:left; border:none;">
+													<span class="sr-only">Toggle navigation</span>
+													<span class="icon-bar"></span>
+													<span class="icon-bar"></span>
+													<span class="icon-bar"></span>
+												</button>
+											</li>
+											<li>
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SEARCH EXPERT <span class="glyphicon glyphicon-search"></span></a>
+											</li>
+											<li>
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">IT SOLUTIONS <span class="glyphicon glyphicon-chevron-down"></span></a>
+											</li>
+										</ul>
+									</div>
+									
+									<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+										<ul class="nav navbar-nav">
+											<li class="visible-xs"><a href="about.html">ABOUT US</a></li>
+											<li class="visible-xs"><a href="#">LOGIN</a></li>
+											<li class="visible-xs"><a href="#">FIND LOCAL IT EXPERTS</a></li>
+											<li class="dropdown hidden-xs">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SEARCH FOR AN IT PRO <span class="glyphicon glyphicon-chevron-down"></span></a>
+												<div class="dropdown-menu">
+													<div class="row">
+														<div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-offset-0 col-md-3">
+															<select class="form-control FocusSelect Classic">
+																<option>Select an IT Category</option>
+															</select>
+														</div>
+														
+														<div class="col-xs-12 hidden-md hidden-lg Submenu_V_Splitter">&nbsp;</div>
+														
+														<div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-offset-0 col-md-2 md-removePadding col-lg-3">
+															<input class="form-control FocusSelect Location" placeholder="Choose your location" />
+														</div>
+														
+														<div class="col-xs-12 hidden-md hidden-lg Submenu_V_Splitter">&nbsp;</div>
+														
+														<div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-offset-0 col-md-3 col-lg-2 lg-removePadding text-md-left text-xs-center">
+															<button type="button" class="btn_SearchExperts">SEARCH EXPERTS&emsp;<span class="glyphicon glyphicon-search"></span></button>
+														</div>
+														
+														<div class="col-xs-12 hidden-md hidden-lg Submenu_V_Splitter">&nbsp;</div>
+														
+														<div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-offset-0 col-md-1 SearchOrFind" style="padding:0px; color:#FFFFFF;">
+															OR
+														</div>
+														
+														<div class="col-xs-12 hidden-md hidden-lg Submenu_V_Splitter">&nbsp;</div>
+														
+														<div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-offset-0 col-md-3 col-lg-3 text-xs-center">
+															<a href="#" class="FindExpertsForMe">
+																FIND EXPERTS FOR ME&nbsp;<i class="LongArrowRight White" aria-hidden="true"></i>
+															</a>
+														</div>
+													</div>
+												</div>
+											</li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">IT SOLUTIONS <span class="glyphicon glyphicon-chevron-down"></span></a>
+												<div class="dropdown-menu">
+													<table cellpadding="0" cellspacing="0" border="0" width="100%">
+														<tr>
+															<td width="25%" class="ITSol_MenuBtn" valign="top">
+																<div class="col-xs-12 MenuBarSubMenuBtn Active"><img src="images/SubMenu_Virtualization.png"/>&emsp;VIRTUALIZATION</div>
+																<div class="col-xs-12 MenuBarSubMenuBtn"><img src="images/SubMenu_Analytics.png"/>&emsp;BIG DATA & ANALYTICS</div>
+																<div class="col-xs-12 MenuBarSubMenuBtn"><img src="images/SubMenu_Cloud.png"/>&emsp;CLOUD</div>
+																<div class="col-xs-12 MenuBarSubMenuBtn"><img src="images/SubMenu_DataCenter.png"/>&emsp;DATA CENTER</div>
+																<div class="col-xs-12 MenuBarSubMenuBtn"><img src="images/SubMenu_Networking.png"/>&emsp;NETWORKING</div>
+																<div class="col-xs-12 MenuBarSubMenuBtn"><img src="images/SubMenu_Security.png"/>&emsp;SECURITY</div>
+															</td>
+																
+															<td valign="top" style="background-color:#FFFFFF;">
+																<div class="col-xs-12 MenuBarSubMenuDiv Active">
+																	<div class="row">
+																		<div class="col-xs-12 col-md-4">
+																			<h4>PRODUCTS</h4>
+																			<p>
+																				Server Virtualization<br/>
+																				Virtual Desktop Infrastructure<br/>
+																				Software-defined Data Center<br/>
+																				Backup &amp; Disaster Recovery
+																			</p>
+																		</div>
+																		<div class="col-xs-12 col-md-4">
+																			<h4>TRENDING CONTENT</h4>
+																			<p>
+																				Server Virtualization<br/>
+																				Virtual Desktop Infrastructure<br/>
+																				Software-defined Data Center<br/>
+																				Virtual Desktop Infrastructure<br/>
+																				Software-defined Data Center<br/>
+																				Backup &amp; Disaster Recovery<br/>
+																				<a href="#" class="SM_LoadMore">LOAD MORE</a>
+																			</p>
+																		</div>
+																		<div class="col-xs-12 col-md-4">
+																			<h4>FUTURE SOLUTIONS</h4>
+																			<p style="line-height:20px;">
+																				<img class="img-responsive" src="images/DataVirtualization_DevOpsPromise.png" /><br/>
+																				How Data Virtualization delivers on the DevOps promise
+																			</p>
+																		</div>
+																	</div>
+																	<div class="row" style="padding:0px; margin-left:-15px; margin-right:-15px;">
+																		<div class="col-xs-6" style="padding:0px; border:1px solid #10b2ed; border-right:none; border-left:none;">
+																			<a href="#" class="SM_Footer_Button">
+																				FIND ME AN EXPERT&nbsp;<i class="LongArrowRight Blue" aria-hidden="true"></i>
+																			</a>
+																		</div>
+																		<div class="col-xs-6" style="padding:0px; border:1px solid #10b2ed; border-right:none;">
+																			<a href="#" class="SM_Footer_Button">
+																				START YOUR IT PROJECT &nbsp;<i class="LongArrowRight Blue" aria-hidden="true"></i>
+																			</a>
+																		</div>
+																	</div>
+																</div>
+																<div class="col-xs-12 MenuBarSubMenuDiv">SUB MENU - BIG DATA & ANALYTICS</div>
+																<div class="col-xs-12 MenuBarSubMenuDiv">SUB MENU - CLOUD</div>
+																<div class="col-xs-12 MenuBarSubMenuDiv">SUB MENU - DATA CENTER</div>
+															</td>
+														</tr>
+													</table>
+												</div>
+											</li>
+											<li class="dropdown">
+												<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">IT PROJECT SERVICES <span class="glyphicon glyphicon-chevron-down"></span></a>
+												<div class="dropdown-menu">
+													THIS IS A SUB MENU
+												</div>
+											</li>
+										</ul>
+									
+										<ul class="nav navbar-nav navbar-right hidden-xs" style="margin-right:0px !important;">
+											<li class="BecomeAnExpert">
+												<a href="#">
+													BECOME AN EXPERT&nbsp;<i class="LongArrowRight Grey" aria-hidden="true"></i>
+												</a>
+											</li>
+										</ul>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+			
+			
+		</div>
+		
+	</div>
+
+	</header>
+	<section id="body">
+		<!-- Banner -->
+			<div class="container-fluid" style="">
+				<div class="row" style="background-color:#F2F2F2;z-index:0;">
+					<div class="vhbanner-overlay">
+						<div class="vhbanner">
+						<div class="container">
+								<ol class="breadcrumb">
+								  <li><a href="homepage.html">Home</a></li>
+								  <li><a href="#">IT SOLUTIONS</a></li>
+								  <li class="active">VIRTUALIZATION</li>
+								</ol>
+							</div>
+							
+							<div class="container" style="background-color:#FFFFFF;z-index:1;">
+								<div class="vhbanner-text">
+									<p style="font-family: 'Montserrat', sans-serif !important;font-weight:lighter;font-size:14px;color:#999999;">IT SOLUTIONS</p>
+									<h1 style="font-size:32px;font-weight:bold;">VIRTUALIZATION</h1>
+									<hr style="width:100px;background-color:#00ADEC;height:1px;"/>
+									<p style="font-size:14px;font-weight:normal;">Virtualization refers to the creation of a virtual (rather than actual) version of something, including virtual computer hardware platforms, operating systems, storage devices, and computer network resources. It is a proven software technology that makes it possible to run multiple operating systems and applications on the same server at the same time.<br /><br />We've broken down Virtualization into the below mentioned categories to make your search easier, explore more by choosing any of our IT Solutions and connect with our IT Experts:</p>
+									<div class="row" id="vhbannericons">
+										<div class="col-sm-3 col-xs-12">
+											<div class="thumbnail"><img src="images/virtualization/server-virtualization.png" alt="" class="img-responsive" /></div>
+											<div class="caption">
+												<img src="images/virtualization/server-virtualization-mob.png" />
+												SERVER VIRTUALIZATION
+											</div>
+										</div>
+										<div class="col-sm-3 col-xs-12">
+											<div class="thumbnail"><img src="images/virtualization/virtual-desktop.png" alt="" class="img-responsive" /></div>
+											<div class="caption">
+												<img src="images/virtualization/virtual-desktop-mob.png" />
+												VIRTUAL DESKTOP INFRASTRUCTURE
+											</div>
+										</div>
+										<div class="col-sm-3 col-xs-12">
+											<div class="thumbnail"><img src="images/virtualization/software-datacenter.png" alt="" class="img-responsive" /></div>
+											<div class="caption">
+												<img src="images/virtualization/data-center-mob.png" />
+												SOFTWARE-DEFINED ​​​​​​​DATA CENTER
+											</div>
+										</div>
+										<div class="col-sm-3 col-xs-12">
+											<div class="thumbnail"><img src="images/virtualization/backup-recovery.png" alt="" class="img-responsive" /></div>
+											<div class="caption">
+												<img src="images/virtualization/backup-recovery-mob.png" />
+												BACK-UP AND DISASTER RECOVERY
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="text-center virtualizationcategory" style="background-color:#f2f2f2;padding-bottom:50px;">
+						<h1 style="font-weight:lighter;font-size:32px;color:#00ADEC;">Not seeing your Virtualization category?</h1>
+						<p style="font-family: 'Montserrat Light', sans-serif !important;font-size:16px;color:#666666;">Help us grow by submitting a topic you'd like to see more of</p>
+						<form class="form-inline">
+						  <div class="form-group">
+							<input type="email" class="form-control" id="emailaddress" placeholder="Type your email address">
+						  </div>
+						  <div class="form-group">
+							<input type="email" class="form-control" id="catsuggestion" placeholder="Category suggestion">
+						  </div>
+						  <button type="submit" class="btn btn-focuspink inline">SUBMIT YOUR TOPIC <i class="LongArrowRight White"></i></button>
+						</form>
+					</div>
+
+				</div>
+			</div>
+		<!-- Banner -->
+		
+	<!-- InXero Trending Contents -->
+		
+			<div class="container-fluid text-center" style="background-color:#FFFFFF;">
+				<div class="row" style="padding:30px 0px;">
+				<h1 style="font-size:26px;font-weight:bold;">TRENDING CONTENTS</h1>
+				<div class="container">
+					<div class="row">
+						<div class="heading-trendcont">
+							<div class="row" style="margin-left:0px; margin-right:0px; padding:10px 50px;">
+								<div class="col-md-3 hidden-xs hidden-sm" style="border-bottom:2px solid #F2F2F2;position:relative;bottom:-25px;">
+								</div>
+								<div class="col-xs-12 col-sm-12 col-md-6" style="">
+									<div class="row">
+										<div class="dropdown">
+											<button onclick="myFunction()" class="dropbtn">CONTENT TYPE&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+											 <div class="dropdown-content">
+												<p>Option1</p>
+												<p>Option2</p>
+												<p>Option3</p>
+											 </div>
+										</div>
+										<div class="dropdown">
+											<button onclick="myFunction()" class="dropbtn">FIND INDUSTRY&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+											 <div class="dropdown-content">
+												<p>Option1</p>
+												<p>Option2</p>
+												<p>Option3</p>
+											 </div>
+										</div>
+										<div class="dropdown">
+											<button class="dropbtn">MOST RECENT&nbsp;&nbsp;&nbsp;<i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+											 <div class="dropdown-content">
+												<p>Option1</p>
+												<p>Option2</p>
+												<p>Option3</p>
+											 </div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-3 hidden-xs hidden-sm" style="border-bottom:2px solid #F2F2F2;position:relative;bottom:-25px;">	</div>
+							</div>
+						</div>
+					</div>
+					
+					
+					<!-- InXero container -->
+					<div class='inxero-xapp' data-id='Xl0k0pRoxy2189' data-thumbnail='medium' data-layout='responsive-carousal' data-border='0' data-content='4'></div><div url='https://www.inxero.com/channels/intelligenceapp-io/showcase/2620-virtualization-resource-library'></div>
+					<!-- InXero container -->
+					
+					<div class="row text-center" style="padding:30px 0px;">
+						<a href="" class="btn btn-loadmore">LOAD MORE <i class="LongArrowRight Pink" aria-hidden="true"></i></a>
+					</div>
+					
+				</div>
+				</div>
+			</div>
+		
+		<!-- InXero Trending Contents -->
+		
+		
+		<!-- Virtualization Experts -->
+			
+			<div class="container-fluid text-center" style="background-color:#F8F7F7;">
+				<div class="row" style="padding:30px 10px;">
+					<div class="container">
+						<div class="row">
+							<div class="heading">
+								<div class="" style="margin-left:0px; margin-right:0px; padding:10px 15px;">
+									<div class="col-md-3 hidden-xs hidden-sm" style="border-bottom:1px solid #E2E1E1;position:relative;bottom:-30px;"></div>
+									<div class="col-xs-12 col-sm-12 col-md-6" style="padding-left:20px;padding-right:20px;"><h1 style="font-size:26px;font-weight:bold;">VIRTUALIZATION EXPERTS</h1></div>
+									<div class="col-md-3 hidden-xs hidden-sm" style="border-bottom:1px solid #E2E1E1;position:relative;bottom:-30px;"></div>
+								</div>
+							</div>
+						</div>
+						<div class="row" style="padding:30px 0px;">
+					<!-- DESKTOP VIEW -->
+					  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+						  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						  <li data-target="#myCarousel" data-slide-to="1"></li>
+						</ol>
+
+						<!-- Wrapper for slides -->
+						<div class="carousel-inner" role="listbox">
+						  <div class="item active">
+							<div class="col-md-2 col-sm-4 col-xs-6">
+								<div class="thumbnail"><img src="images/virtualization/expert-1.png" alt="Expert" class="img-responsive img-circle"/></div>
+								<div class="caption">
+									<h4 style="font-size:14px;">SARAH JOHNSON</h4>
+									<p style="font-size:12px;font-style:italic;">Orange County Tech</p>
+									<p><i class="fa fa-thumbs-up fa-1x" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" style="color:#666666;" aria-hidden="true"></i></p>
+									<p style="font-size:12px;">22 reviews</p>
+									<p style="font-size:12px;">Questions Answered: 130</p>
+								</div>
+							</div>
+							<div class="col-md-2 col-sm-4 col-xs-6">
+								<div class="thumbnail"><img src="images/virtualization/expert-2.png" alt="Expert" class="img-responsive img-circle"/></div>
+								<div class="caption">
+									<h4 style="font-size:14px;">MICHAEL MILLER</h4>
+									<p style="font-size:12px;font-style:italic;">Techology Shop LLC</p>
+									<p><i class="fa fa-thumbs-up fa-1x" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" style="color:#666666;" aria-hidden="true"></i></p>
+									<p style="font-size:12px;">22 reviews</p>
+									<p style="font-size:12px;">Questions Answered: 130</p>
+								</div>
+							</div>
+							<div class="col-md-2 col-sm-4 col-xs-6 hidden-xs">
+								<div class="thumbnail"><img src="images/virtualization/expert-1.png" alt="Expert" class="img-responsive img-circle"/></div>
+								<div class="caption">
+									<h4 style="font-size:14px;">SARAH JOHNSON</h4>
+									<p style="font-size:12px;font-style:italic;">Orange County Tech</p>
+									<p><i class="fa fa-thumbs-up fa-1x" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" style="color:#666666;" aria-hidden="true"></i></p>
+									<p style="font-size:12px;">22 reviews</p>
+									<p style="font-size:12px;">Questions Answered: 130</p>
+								</div>
+							</div>
+							<div class="col-md-2 col-sm-4 col-xs-6 hidden-sm hidden-xs">
+								<div class="thumbnail"><img src="images/virtualization/expert-2.png" alt="Expert" class="img-responsive img-circle"/></div>
+								<div class="caption">
+									<h4 style="font-size:14px;">MICHAEL MILLER</h4>
+									<p style="font-size:12px;font-style:italic;">Techology Shop LLC</p>
+									<p><i class="fa fa-thumbs-up fa-1x" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" style="color:#666666;" aria-hidden="true"></i></p>
+									<p style="font-size:12px;">22 reviews</p>
+									<p style="font-size:12px;">Questions Answered: 130</p>
+								</div>
+							</div>
+							<div class="col-md-2 col-sm-4 col-xs-6 hidden-sm hidden-xs">
+								<div class="thumbnail"><img src="images/virtualization/expert-1.png" alt="Expert" class="img-responsive img-circle"/></div>
+								<div class="caption">
+									<h4 style="font-size:14px;">SARAH JOHNSON</h4>
+									<p style="font-size:12px;font-style:italic;">Orange County Tech</p>
+									<p><i class="fa fa-thumbs-up fa-1x" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" style="color:#666666;" aria-hidden="true"></i></p>
+									<p style="font-size:12px;">22 reviews</p>
+									<p style="font-size:12px;">Questions Answered: 130</p>
+								</div>
+							</div>
+						  </div>
+						  <div class="item">
+							<div class="col-md-2 col-sm-4 col-xs-6">
+								<div class="thumbnail"><img src="images/virtualization/expert-1.png" alt="Expert" class="img-responsive img-circle"/></div>
+								<div class="caption">
+									<h4 style="font-size:14px;">SARAH JOHNSON</h4>
+									<p style="font-size:12px;font-style:italic;">Orange County Tech</p>
+									<p><i class="fa fa-thumbs-up fa-1x" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" style="color:#666666;" aria-hidden="true"></i></p>
+									<p style="font-size:12px;">22 reviews</p>
+									<p style="font-size:12px;">Questions Answered: 130</p>
+								</div>
+							</div>
+							<div class="col-md-2 col-sm-4 col-xs-6">
+								<div class="thumbnail"><img src="images/virtualization/expert-2.png" alt="Expert" class="img-responsive img-circle"/></div>
+								<div class="caption">
+									<h4 style="font-size:14px;">MICHAEL MILLER</h4>
+									<p style="font-size:12px;font-style:italic;">Techology Shop LLC</p>
+									<p><i class="fa fa-thumbs-up fa-1x" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" style="color:#666666;" aria-hidden="true"></i></p>
+									<p style="font-size:12px;">22 reviews</p>
+									<p style="font-size:12px;">Questions Answered: 130</p>
+								</div>
+							</div>
+							<div class="col-md-2 col-sm-4 col-xs-6 hidden-xs">
+								<div class="thumbnail"><img src="images/virtualization/expert-1.png" alt="Expert" class="img-responsive img-circle"/></div>
+								<div class="caption">
+									<h4 style="font-size:14px;">SARAH JOHNSON</h4>
+									<p style="font-size:12px;font-style:italic;">Orange County Tech</p>
+									<p><i class="fa fa-thumbs-up fa-1x" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" style="color:#666666;" aria-hidden="true"></i></p>
+									<p style="font-size:12px;">22 reviews</p>
+									<p style="font-size:12px;">Questions Answered: 130</p>
+								</div>
+							</div>
+							<div class="col-md-2 col-sm-4 col-xs-6 hidden-sm hidden-xs">
+								<div class="thumbnail"><img src="images/virtualization/expert-2.png" alt="Expert" class="img-responsive img-circle"/></div>
+								<div class="caption">
+									<h4 style="font-size:14px;">MICHAEL MILLER</h4>
+									<p style="font-size:12px;font-style:italic;">Techology Shop LLC</p>
+									<p><i class="fa fa-thumbs-up fa-1x" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" style="color:#666666;" aria-hidden="true"></i></p>
+									<p style="font-size:12px;">22 reviews</p>
+									<p style="font-size:12px;">Questions Answered: 130</p>
+								</div>
+							</div>
+							<div class="col-md-2 col-sm-4 col-xs-6 hidden-sm hidden-xs">
+								<div class="thumbnail"><img src="images/virtualization/expert-1.png" alt="Expert" class="img-responsive img-circle"/></div>
+								<div class="caption">
+									<h4 style="font-size:14px;">SARAH JOHNSON</h4>
+									<p style="font-size:12px;font-style:italic;">Orange County Tech</p>
+									<p><i class="fa fa-thumbs-up fa-1x" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true"></i>&nbsp;<i class="fa fa-thumbs-up" style="color:#666666;" aria-hidden="true"></i></p>
+									<p style="font-size:12px;">22 reviews</p>
+									<p style="font-size:12px;">Questions Answered: 130</p>
+								</div>
+							</div>
+						  </div>
+						</div>
+
+						<!-- Left and right controls -->
+						<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+						  <i class="carousel-left-control" aria-hidden="true"></i>
+						  <span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+						  <i class="carousel-right-control" aria-hidden="true"></i>
+						  <span class="sr-only">Next</span>
+						</a>
+					  </div>
+					  <!-- DESKTOP VIEW -->
+					  
+					  
+					</div>
+					</div>
+				</div>
+			</div>
+		
+		<!-- Virtualization Experts -->
+		
+		<!-- Thought Leadership -->
+			<div class="container-fluid" style="background-color:#FFFFFF;">
+				<div class="row" style="padding:30px 10px;">
+					<div class="container text-center">
+						<div class="row">
+							<div class="heading">
+								<div class="row" style="margin-left:0px; margin-right:0px; padding:10px 15px;">
+									<div class="col-md-3 hidden-xs hidden-sm" style="border-bottom:1px solid #E2E1E1;position:relative;bottom:-30px;"></div>
+									<div class="col-xs-12 col-sm-12 col-md-6" style=""><h1 style="font-size:26px;font-weight:bold;">THOUGHT LEADERSHIP</h1></div>
+									<div class="col-md-3 hidden-xs hidden-sm" style="border-bottom:1px solid #E2E1E1;position:relative;bottom:-30px;"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12">
+							<div class="col-md-4" style="padding-top:20px;">
+								<div class="thumbnail">
+									<img class="img-responsive" src="images/LIVE_CHAT.png" />
+								</div>
+								<div class="caption">
+									<h4>LOREM IPSUM DOLOR SIT AMET</h4>				
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. 
+	Check out the easiest way to find local IT Experts ... build connections: <br /><br />
+									<a href="" target="_blank"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></p>
+								</div>
+							</div>
+							<div class="col-md-4" style="padding-top:20px;">
+								<div class="thumbnail">
+									<img class="img-responsive" src="images/RFP_SOLUTION_COMPARISON.png" />
+								</div>
+								<div class="caption">
+									<h4>LOREM IPSUM DOLOR SIT AMET</h4>				
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. 
+	Check out the easiest way to find local IT Experts ... build connections: <br /><br />
+									<a href="" target="_blank"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></p>
+								</div>
+							</div>
+							<div class="col-md-4" style="padding-top:20px;">
+								<div class="thumbnail">
+									<img class="img-responsive" src="images/SIMPLE_QUOTE.png" />
+								</div>
+								<div class="caption">
+									<h4>LOREM IPSUM DOLOR SIT AMET</h4>
+									<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt. 
+	Check out the easiest way to find local IT Experts ... build connections: <br /><br />
+									<a href="" target="_blank"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></p>
+								</div>
+							</div>
+						</div>
+						</div>
+				   </div>
+				</div>
+		
+				<div class="row text-center" style="padding:30px 0px;">
+						<a href="" class="btn btn-loadmore">LOAD MORE <i class="LongArrowRight Pink" aria-hidden="true"></i></a>
+				</div>
+
+			</div>
+		<!-- Thought Leadership -->
+		
+	</section>
+	<footer>
+
+		<!-- CTA's  section -->
+	<div class="container-fluid" style="background-color:#262626;">
+		<div class="container" style="padding-top:40px; padding-bottom:40px;">
+			<div class="row">
+				<div class="col-md-6 ctasection"  style="position:relative; padding-top:20px;padding-right:30px;">
+		
+				<div class="row">
+					<div class="col-xs-12 DoubleBorderRight">
+						<div class="row">
+							<div class="col-sm-offset-2 col-sm-3" style="padding-right:0px;">TAKE IT TO THE NEXT LEVEL</div>
+							<div class="col-sm-6"><a class="btn btn-experts">JOIN INTELLIGENCE <i class="LongArrowRight White"></i></a></div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div class="col-md-6 ctasection"  style="position:relative; padding-top:20px;">
+		
+				<div class="row">
+					<div class="col-xs-12 DoubleBorderLeft">
+						<div class="row">
+							<div class="col-sm-offset-2 col-sm-3" style="padding-right:0px;">BE PART OF INTELLIGENCE</div>
+							<div class="col-sm-6"><a class="btn btn-experts">BECOME AN EXPERT <i class="LongArrowRight White"></i></a></div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			</div>
+			
+			
+		
+		</div>
+	</div>
+	
+	<!-- CTA's  section -->
+
+
+	
+	<!-- Links section -->
+	
+	<div class="container-fluid hidden-xs" id="footerlinks">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-4">
+					<h5>VIRTUALIZATION</h5>
+					<hr width="30px" style="float:left; margin:0; border-color:#4280A7; margin-bottom:10px;" />
+					<ul>
+						<li><a href="">Server Virtualization</a></li>
+						<li><a href="">Virtual Desktop Infrastructure</a></li>
+						<li><a href="">Software-defined Data Center</a></li>
+						<li><a href="">Backup &amp; Disaster Recovery</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-sm-4">
+					<h5>BIG DATA &AMP; ANALYTICS</h5>
+					<hr width="30px" style="float:left; margin:0; border-color:#4280A7; margin-bottom:10px;" />
+					<ul>
+						<li><a href="">Data Management</a></li>
+						<li><a href="">Analytics &amp; Business Intelligence</a></li>
+						<li><a href="">Data Visualization</a></li>
+						<li><a href="">Data Platforms &amp; Data Infrastructure</a></li>
+						<li><a href="">Data Virtualization</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-sm-4">
+					<h5>CLOUD</h5>
+					<hr width="30px" style="float:left; margin:0; border-color:#4280A7; margin-bottom:10px;" />
+					<ul>
+						<li><a href="">Cloud Services</a></li>
+						<li><a href="">Cloud Management</a></li>
+						<li><a href="">Cloud Migration</a></li>
+						<li><a href="">Private, Public, Hybrid Cloud</a></li>
+					</ul>
+				</div>
+				
+				<div class="col-sm-12 visible-sm"></div>
+				
+				<div class="col-md-3 col-sm-4">
+					<h5>QUICK LINKS</h5>
+					<hr width="30px" style="float:left; margin:0; border-color:#4280A7; margin-bottom:10px;" />
+					<ul>
+						<li><a href="">Home</a></li>
+						<li><a href="about.html">About Us</a></li>
+						<li><a href="">Explore IT Solutions</a></li>
+						<li><a href="">Find Local IT Experts</a></li>
+						<li><a href="">IT White Glove Services</a></li>
+					</ul>
+				</div>
+				
+				<div class="col-xs-12 visible-md visible-lg">&nbsp;</div>
+				
+				<div class="col-md-3 col-sm-4">
+					<h5>DATA CENTER</h5>
+					<hr width="30px" style="float:left; margin:0; border-color:#4280A7; margin-bottom:10px;" />
+					<ul>
+						<li><a href="">Data Center Management and Automation Storage</a></li>
+						<li><a href="">Data Center Facilities</a></li>
+						<li><a href="">Data Center as a Service</a></li>
+						<li><a href="">Compute / Servers</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-sm-4">
+					<h5>NETWORKING</h5>
+					<hr width="30px" style="float:left; margin:0; border-color:#4280A7; margin-bottom:10px;" />
+					<ul>
+						<li><a href="">Software Defined Networking</a></li>
+						<li><a href="">Enterprise Networking</a></li>
+						<li><a href="">Telecommunication</a></li>
+						<li><a href="">Unified Communication</a></li>
+					</ul>
+				</div>
+				
+				<div class="col-sm-12 visible-sm"></div>
+				
+				<div class="col-md-3 col-sm-4">
+					<h5>SECURITY</h5>
+					<hr width="30px" style="float:left; margin:0; border-color:#4280A7; margin-bottom:10px;" />
+					<ul>
+						<li><a href="">Cloud Security</a></li>
+						<li><a href="">GRC</a></li>
+						<li><a href="">Network Security</a></li>
+						<li><a href="">Application &amp; Data Security</a></li>
+						<li><a href="">Mobile &amp; End Point Security</a></li>
+						<li><a href="">Identity &amp; Access Management</a></li>
+						<li><a href="">Cyber Security</a></li>
+						<li><a href="">Security Intelligence</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-4 col-md-3">
+					<h5>CONNECT SOCIAL</h5>
+					<ul class="social">
+						<li><a href=""><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href=""><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li><br />
+						<li><a href=""><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href=""><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-linkedin fa-stack-1x fa-inverse"></i></span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	
+		<div class="container visible-xs" id="footerlinks">
+			<div class="panel-group" id="accordion">
+			
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+					VIRTUALIZATION <span class="caret"></span></a>
+				  </h4>
+				  
+				</div>
+				<div id="collapse1" class="panel-collapse collapse">
+				  <ul class="list-group">
+					<li class="list-group-item"><a href="">Server Virtualization</a></li>
+					<li class="list-group-item"><a href="">Virtual Desktop Infrastructure</a></li>
+					<li class="list-group-item"><a href="">Software-defined Data Center</a></li>
+					<li class="list-group-item"><a href="">Backup &amp; Disaster Recovery</a></li>
+				</ul>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+					DATA CENTER <span class="caret"></span></a>
+				  </h4>
+				</div>
+				<div id="collapse5" class="panel-collapse collapse">
+				  <ul class="list-group">
+					<li class="list-group-item"><a href="">Data Center Management and Automation Storage</a></li>
+					<li class="list-group-item"><a href="">Data Center Facilities</a></li>
+					<li class="list-group-item"><a href="">Data Center as a Service</a></li>
+					<li class="list-group-item"><a href="">Compute / Servers</a></li>
+				</ul>
+				</div>
+			  </div>
+			  
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+					BIG DATA &AMP; ANALYTICS <span class="caret"></span></a>
+				  </h4>
+				</div>
+				<div id="collapse2" class="panel-collapse collapse">
+				  <ul class="list-group">
+					<li class="list-group-item"><a href="">Data Management</a></li>
+					<li class="list-group-item"><a href="">Analytics &amp; Business Intelligence</a></li>
+					<li class="list-group-item"><a href="">Data Visualization</a></li>
+					<li class="list-group-item"><a href="">Data Platforms &amp; Data Infrastructure</a></li>
+					<li class="list-group-item"><a href="">Data Virtualization</a></li>
+				</ul>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+					NETWORKING <span class="caret"></span></a>
+				  </h4>
+				</div>
+				<div id="collapse5" class="panel-collapse collapse">
+				  <ul class="list-group">
+					<li class="list-group-item"><a href="">Software Defined Networking</a></li>
+					<li class="list-group-item"><a href="">Enterprise Networking</a></li>
+					<li class="list-group-item"><a href="">Telecommunication</a></li>
+					<li class="list-group-item"><a href="">Unified Communication</a></li>
+				</ul>
+				</div>
+			  </div>
+			  
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+					CLOUD <span class="caret"></span></a>
+				  </h4>
+				</div>
+				<div id="collapse3" class="panel-collapse collapse">
+				  <ul class="list-group">
+					<li class="list-group-item"><a href="">Cloud Services</a></li>
+					<li class="list-group-item"><a href="">Cloud Management</a></li>
+					<li class="list-group-item"><a href="">Cloud Migration</a></li>
+					<li class="list-group-item"><a href="">Private, Public, Hybrid Cloud</a></li>
+				</ul>
+				</div>
+			  </div>
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+					SECURITY <span class="caret"></span></a>
+				  </h4>
+				</div>
+				<div id="collapse6" class="panel-collapse collapse">
+				  <ul class="list-group">
+					<li class="list-group-item"><a href="">Cloud Security</a></li>
+					<li class="list-group-item"><a href="">GRC</a></li>
+					<li class="list-group-item"><a href="">Network Security</a></li>
+					<li class="list-group-item"><a href="">Application &amp; Data Security</a></li>
+					<li class="list-group-item"><a href="">Mobile &amp; End Point Security</a></li>
+					<li class="list-group-item"><a href="">Identity &amp; Access Management</a></li>
+					<li class="list-group-item"><a href="">Cyber Security</a></li>
+					<li class="list-group-item"><a href="">Security Intelligence</a></li>
+				</ul>
+				</div>
+			  </div>
+			
+			  <div class="panel panel-default">
+				<div class="panel-heading">
+				  <h4 class="panel-title">
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+					QUICK LINKS <span class="caret"></span></a>
+				  </h4>
+				</div>
+				<div id="collapse4" class="panel-collapse collapse">
+				  <ul class="list-group">
+					<li class="list-group-item"><a href="">Home</a></li>
+					<li class="list-group-item"><a href="about.html">About Us</a></li>
+					<li class="list-group-item"><a href="">Explore IT Solutions</a></li>
+					<li class="list-group-item"><a href="">Find Local IT Experts</a></li>
+					<li class="list-group-item"><a href="">IT White Glove Services</a></li>
+				</ul>
+				</div>
+			  </div>
+			</div>
+
+
+			<div class="col-xs-12 visible-xs">
+				<h5>CONNECT SOCIAL</h5>
+				<ul class="social">
+					<li><a href=""><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-facebook fa-stack-1x fa-inverse"></i></span></a></li>
+					<li><a href=""><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span></a></li>
+					<li><a href=""><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-google-plus fa-stack-1x fa-inverse"></i></span></a></li>
+					<li><a href=""><span class="fa-stack fa-lg"><i class="fa fa-circle fa-stack-2x"></i><i class="fa fa-linkedin fa-stack-1x fa-inverse"></i></span></a></li>
+				</ul>
+			</div>
+		
+	</div>
+	
+	<!-- Links section -->
+	
+	<!-- Footer -->
+	
+	<div class="container-fluid" id="footer">
+		<div class="container">
+		<div class="row">
+			<div class="col-md-7">
+				<p>2016 Intelligence App. All rights reserved. Intelligence logo are trademarks used under license by Ingram Micro Inc. All other trademarks are the property of their respective companies.</p>
+				<p class="hidden-xs"><a href="">Terms of Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="">Ingram Micro</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Copyright 2016. All Rights Reserved.</p>
+				<div class="col-xs-12 visible-xs">
+					<p><a href="">Terms of Use</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="">Ingram Micro</a></p>
+					<p>Copyright 2016. All Rights Reserved.</p>
+				</div>
+			</div>
+			<div class="col-md-5">
+				<div class="col-xs-6"><img src="images/google_play_icon.png" alt="" class="img-responsive"/></div>
+				<div class="col-xs-6"><img src="images/appstore-iphone.png" alt="" class="img-responsive"/></div>				
+			</div>
+		</div>
+		</div>
+	</div>
+	
+	<!-- Footer -->
+
+	</footer>
+</body>
+</html>
