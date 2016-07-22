@@ -760,7 +760,7 @@ input[type=text] {
 /*ABOUT US PAGE*/
 .BannerContent.SingleBanner.AboutPage::before
 {
-	background-image:url("../images/About_Us_Banner.png");
+	background-image:url("../images/aboutus/About_Us_Banner.png");
 }
 
 .BannerContent.SingleBanner .SectionTable { max-width: 1280px !important; margin: 0 auto !important; }
